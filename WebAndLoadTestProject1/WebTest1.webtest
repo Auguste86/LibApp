@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="WebTest1" Id="721824dd-e983-42d5-8ad4-5ca3b7ba7a1f" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="default" StopOnError="False" RecordedResultFile="WebTest1.ee19168f-bda2-4f7b-b458-cccc48998ef9.rec.webtestresult" ResultsLocale="">
+  <Items>
+    <Request Method="GET" Guid="1ae7f569-53ec-42c7-8baf-bc98dbaade90" Version="1.1" Url="https://localhost:44332/" ThinkTime="5" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False" />
+    <Request Method="GET" Guid="5784824f-8830-4e13-a341-c41abb5ed1bd" Version="1.1" Url="https://localhost:44332/Author" ThinkTime="3" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="https://localhost:44332/" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="1609e140-4df7-4661-b12b-40b5da402d9c" Version="1.1" Url="https://localhost:44332/Book" ThinkTime="2" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="https://localhost:44332/Author" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="bb1776f2-e67e-4812-9a00-53f92985aedc" Version="1.1" Url="https://localhost:44332/Customer" ThinkTime="3" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="https://localhost:44332/Book" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="835e0453-ab2b-4c6f-bd24-ccb518b84997" Version="1.1" Url="https://localhost:44332/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="https://localhost:44332/Customer" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="7fbc1353-a855-4b0c-a35b-89583a10460f" Version="1.1" Url="https://localhost:44332/" ThinkTime="168" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False" />
+    <Request Method="GET" Guid="f97caaee-2b94-4e43-ae91-e2a84c76a20b" Version="1.1" Url="https://localhost:44332/Author" ThinkTime="9" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="https://localhost:44332/" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="78198945-7fd0-4447-a48f-32a5bf453f51" Version="1.1" Url="https://localhost:44332/Author/Details/3" ThinkTime="11" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="https://localhost:44332/Author" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="27fbb845-bec7-4829-beb6-99af006a31a1" Version="1.1" Url="https://localhost:44332/Author/Edit/3" ThinkTime="6" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="https://localhost:44332/Author/Details/3" />
+      </Headers>
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="1" DisplayName="Extract Hidden Fields" Description="Extract all hidden fields from the response and place them into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+    </Request>
+    <Request Method="GET" Guid="0a315662-bb48-4c4c-abc1-86f6222050f1" Version="1.1" Url="https://localhost:44332/Author/Edit/3" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="https://localhost:44332/Author" ReportingName="" IgnoreHttpStatusCode="False">
+      <FormPostHttpBody>
+        <FormPostParameter Name="AuthorId" Value="{{$HIDDEN1.AuthorId}}" RecordedValue="3" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="Name" Value="fdfath" RecordedValue="fdfath" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__RequestVerificationToken" Value="{{$HIDDEN1.__RequestVerificationToken}}" RecordedValue="CfDJ8DoBcVNh-LtArLI7mD6KbS5Ca3Oxu-cKdBSvphmcW4lLnQiuOMh8jIgeUuhPfBBlEz6mYH1ZFSZemfS6ME9cRiwJAEnAZBwdvQTMKuyyWU6kKlFRweCPywPSRlEpeIbAoVM_fuCyULSV1FUvkjI_ujU" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="3a596665-ed83-49f7-8b12-fa69a8abdc24" Version="1.1" Url="https://localhost:44332/Author/Edit/3" ThinkTime="19" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="https://localhost:44332/Author" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="https://localhost:44332/Author/Edit/3" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="AuthorId" Value="{{$HIDDEN1.AuthorId}}" RecordedValue="3" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="Name" Value="fdfath" RecordedValue="fdfath" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__RequestVerificationToken" Value="{{$HIDDEN1.__RequestVerificationToken}}" RecordedValue="CfDJ8DoBcVNh-LtArLI7mD6KbS5Ca3Oxu-cKdBSvphmcW4lLnQiuOMh8jIgeUuhPfBBlEz6mYH1ZFSZemfS6ME9cRiwJAEnAZBwdvQTMKuyyWU6kKlFRweCPywPSRlEpeIbAoVM_fuCyULSV1FUvkjI_ujU" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="GET" Guid="1ac60cd2-92c8-47eb-b7dd-67bdcec7dc92" Version="1.1" Url="https://localhost:44332/Author/Delete/3" ThinkTime="3" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="https://localhost:44332/Author" />
+      </Headers>
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="1" DisplayName="Extract Hidden Fields" Description="Extract all hidden fields from the response and place them into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+    </Request>
+    <Request Method="GET" Guid="42c5aee4-87c5-4638-9fd7-18ce720202f7" Version="1.1" Url="https://localhost:44332/Author/Delete/3" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="https://localhost:44332/Author" ReportingName="" IgnoreHttpStatusCode="False">
+      <FormPostHttpBody>
+        <FormPostParameter Name="AuthorId" Value="{{$HIDDEN1.AuthorId}}" RecordedValue="3" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__RequestVerificationToken" Value="{{$HIDDEN1.__RequestVerificationToken}}" RecordedValue="CfDJ8DoBcVNh-LtArLI7mD6KbS4XZXrWF8lkxxpjJjcG9iG8t69-Ca6twX_xXXctdHWXmrp8Z7uORpsODKOUpea7gFenyX0zwaHPXdhS_Sd-qmeyGd2KvUin31r-mwOeqlAizh1U2WnjPqZGM_dZD4r24Yo" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="cc065d40-9d0e-4180-af63-2bdb7ceaa427" Version="1.1" Url="https://localhost:44332/Author/Delete/3" ThinkTime="16" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="https://localhost:44332/Author" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="https://localhost:44332/Author/Delete/3" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="AuthorId" Value="{{$HIDDEN1.AuthorId}}" RecordedValue="3" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__RequestVerificationToken" Value="{{$HIDDEN1.__RequestVerificationToken}}" RecordedValue="CfDJ8DoBcVNh-LtArLI7mD6KbS4XZXrWF8lkxxpjJjcG9iG8t69-Ca6twX_xXXctdHWXmrp8Z7uORpsODKOUpea7gFenyX0zwaHPXdhS_Sd-qmeyGd2KvUin31r-mwOeqlAizh1U2WnjPqZGM_dZD4r24Yo" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="GET" Guid="c3e6257b-fc27-4707-9c05-0e4f56cbce96" Version="1.1" Url="https://localhost:44332/Author" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="https://localhost:44332/Author" />
+      </Headers>
+    </Request>
+  </Items>
+  <ValidationRules>
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="回應 URL" Description="驗證回應 URL 在套用重新導向之後是否和記錄的回應 URL 相同。已忽略 QueryString 參數。" Level="Low" ExectuionOrder="BeforeDependents" />
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleResponseTimeGoal, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="回應時間目標" Description="驗證此要求的回應時間是否小於或等於此要求所指定的回應時間目標。回應時間目標為零將被忽略。" Level="Low" ExectuionOrder="AfterDependents">
+      <RuleParameters>
+        <RuleParameter Name="Tolerance" Value="0" />
+      </RuleParameters>
+    </ValidationRule>
+  </ValidationRules>
+</WebTest>

@@ -1,0 +1,36 @@
+﻿@model IEnumerable<LibApp.ViewModel.CustomerViewModel>
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Customer</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th> ID</th>
+            <th> Name</th>
+            <th> Borrowed books count</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var customerVM in Model) {
+        <tr>
+            <td>@customerVM.Customer.CustomerId</td>
+            <td>@customerVM.Customer.Name</td>
+            <td>@customerVM.BookCount</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@customerVM.Customer.CustomerId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@customerVM.Customer.CustomerId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@customerVM.Customer.CustomerId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
